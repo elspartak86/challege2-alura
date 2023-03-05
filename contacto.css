@@ -1,0 +1,247 @@
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto{
+    background-image: url(img/mundo.png);
+    background-color:rgba(30,35,38,1) ;
+    color: aliceblue;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 20px 0;
+	color:aliceblue;
+}
+
+.contacto .col img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul{
+    list-style: none;
+}
+
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i{
+    color:aliceblue;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+.container {
+	background-color: rgb(17, 16, 16);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid rgb(17, 16, 16);
+	background-color: #f7f7f7;
+	padding: 10px 40px;
+}
+
+.header h2 {
+	font-size: 38px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 15px 0;
+	color:black ;
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#message{
+	border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #fff;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 10px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: rgb(17, 16, 16);
+}
+
+.form-control.error input {
+	border-color:red;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: rgb(17, 16, 16);
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #00d4ff;
+	visibility: visible;
+}
+
+.form-control small {
+	color:#00d4ff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+/*menu para el button*/
+.form button {
+	color: #fff;
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.button {
+	--color: #00d4ff;
+	padding: 0.8em 1.7em;
+	background-color: transparent;
+	border-radius: .3em;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: .5s;
+	font-weight: 400;
+	font-size: 17px;
+	border: 1px solid;
+	font-family: inherit;
+	text-transform: uppercase;
+	color: var(--color);
+	z-index: 1;
+	border-radius: 45px;
+   }
+   
+   .button::before, .button::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 50%;
+	z-index: -1;
+	background-color: var(--color);
+	transition: 1s ease;
+   }
+   
+   .button::before {
+	top: -1em;
+	left: -1em;
+   }
+   
+   .button::after {
+	left: calc(100% + 1em);
+	top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+	height: 410px;
+	width: 410px;
+   }
+   
+   .button:hover {
+	color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+	filter: brightness(.8);
+   }
+/*boton para el borrado de texto*/
+   .boton{
+	position: relative;
+	font-size: 25px;
+	text-align: center;
+	color: aliceblue;
+    background: rgb(17, 16, 16);
+	width: 100%;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 45px;
+	border: 2px solid #f0f0f0;
+
+}
+
+    .boton:hover{
+	background: #00d4ff;
+	color:aliceblue ;
+}
+   

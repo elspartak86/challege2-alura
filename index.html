@@ -1,0 +1,440 @@
+    <!--link icono-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre-mi.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="curriculum.css">
+    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
+<body>
+    <!--menu principal-->
+    <div class="container-header">
+        <header>
+        <div class="logo">
+            <a href="#">JAGA</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+   <!-- inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="container-img">
+                <img src="img/me.jpg">
+            </div>
+            <h1>Jorge Alberto Gutiérrez Almanza</h1>
+            <h2>Ingeniero industrial- Programador JR</h2>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/jorgealberto.gutierrez.5220?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jorge-alberto-guti%C3%A9rrez-almanza-87a5a1218" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=524451194521" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/elspartak86" target="_blank"><i class="fa-brands fa-github"></i></a>   
+            </div>
+        </div>  
+    </section>
+   <!-- sobremi -->
+    <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Acerca de mi</h2>
+        <p><strong>Hola mucho gusto soy Jorge Alberto Gutiérrez</strong> Yo soy de México actualmente vivo en el estado de Guanajuato recién terminé una carrera en ingeniería industria, en mi camino de profesión entendí y comprendí que el camino te lleva por muchas veredas y muchas veces esas veredas te llevan a lo que te gusta y apasiona. Y de un día de ser ingeniero quise y decidí ser un desarrollador front end, me gusto me apasiono y es una de las razones por las que estoy emprendiendo este nuevo camino. Un camino el cual me conlleva a ser parte de la creación de paginas web y hoy sin mas solo puedo decir mil gracias a todos mis maestros por darme el aprendizaje de desarrollar en HTML, CSS Y JS.
+            “El aprendizaje nunca debe detenerse porque muchas veces llegamos a consolidar el éxito que merecemos.”
+           </p>
+        <div class="fila">
+            <div class="col">
+                <h3>Datos personales</h3>
+                <ul>
+                    <li>
+                        <strong>Fecha de nacimiento</strong>
+                        19/11/1986
+                    </li>
+                    <li>
+                        <strong>Whatsapp</strong>
+                        4451194521
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        elspartak@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Hobbies</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                        <span>ESCRIBIR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        </span>GAMES</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-sharp fa-solid fa-futbol"></i>
+                        <span>FUTBOL</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-sharp fa-solid fa-book"></i>
+                        <span>LEER</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>PROGRAMAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>MI MASCOTA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>
+            <a href="https://drive.google.com/file/d/1Dyg1MNhFNWc-FDQLXHfgSbeQLywl5Cwr/view?usp=sharing" target="_blank" download="curriculum.pdf">  Descargar mi CV</a>
+            <i class="fa-solid fa-download"></i> <span class="overlay"></span>
+        </button>
+    </div>
+    </section>
+     <!--skills-->
+     <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Tecnicas Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>69%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Canva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Web-design</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professionalismo -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsable</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+         <!-- curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniero industrial</h4>
+                        <span class="casa">UTEL</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Terminé la carrera de ingeniería industrial en la universidad UTEL en esta universidad tuve certificaciones en Microsoft Word y en Excel.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Aprendizaje en desarrollo web</h4>
+                        <span class="casa">Innovación virtual</span>
+                        <span class="fecha">2022</span>
+                        <p>Curso de Fronted y backed tomado en innovación virtual. Launch X: Misión FrontEnd. Launch X: Misión BackEnd.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Aprendizaje en HTML CSS Y JS</h4>
+                        <span class="casa">Alura LATAM</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Curso de desarrollo web con HTML CSS Y JS curso tomado con Alura LATAM. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Encargado del area de producción</h4>
+                        <span class="casa">Cesi textil</span>
+                        <span class="fecha">2008 - 2021</span>
+                        <p>Antes de conocer lo que queria hacer antes, de si quiera conocer lo que era el desarrollo web, por 13 años trabaje en una empresa del rubro textil en donde fui encargado del area de producción. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Reclutador Freelencer</h4>
+                        <span class="casa">Axkan</span>
+                        <span class="fecha">2022</span>
+                        <p>Dejando de lado lo que fue dedicarme al sector de producción textil me dedique a reclutar personal, para Axkan aquí fue donde aprendí a desarrollar campañas publicitarias de marketing y a desarrollar proyectos con Figma.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Líder de marketing</h4>
+                        <span class="casa">Focus your mind</span>
+                        <span class="fecha"> 2022</span>
+                        <p>Líder de marketing para la multinacional Focus your mind, me dedique al desarrollo de marketing, para así lidear campañas pubisitarias con elfin, de dar a conocer la marca.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- PORTFOLIO -->
+     <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+      <div class="title-cards">
+		<h2>Portafolio<h2>
+	  </div>
+      <div class="container-card">
+      <div class="card">
+	<figure>
+		<img src="img/george.png" alt="logo alura">
+	</figure>
+	<div class="contenido-card">
+		<h3>George de Tattoo</h3>
+		<p>Pagina creada como punto de venta de accesorios para tatuajes. </p>
+		<a href="https://github.com/elspartak86/Practica-de-Alura" target="_blank">Código</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="img/banderas.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Banderas</h3>
+		<p>Con solo CSS y HTML creación de banderas.</p>
+        <a href= "https://github.com/elspartak86/banderas"target="_blank">Código</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="img/challenge1.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Practicante de desarrollo Web</h3>
+		<p>Practica de alura desafío challenge1 creación de un encriptador de mensajes.</p>
+        <a href="https://github.com/elspartak86/first-challenge-alura" target="_blank">Código</a>
+	</div>
+ </div>
+ <div class="card">
+	<figure>
+		<img src="img/calculadora.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Calculator</h3>
+		<p>Creación de una calculadora 100% funcional solo usando CSS y HTML.</p>
+		<a href="https://github.com/elspartak86/calculadora-de-principiante"target="_blank">Código</a>
+	</div>
+ </div>
+ <div class="card">
+	<figure>
+		<img src="img/pokedex.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Pokédex</h3>
+		<p>Diseño web para la creación de un pokédex.</p>
+		<a href="https://github.com/elspartak86/pokedex-de-principiante"target="_blank">Código</a>
+	</div>
+ </div>
+ <div class="card">
+	<figure>
+		<img src="img/game.png">
+	</figure>
+       <div class="contenido-card">
+		<h3>Robo-game</h3>
+		<p>Un juego y un reloj una locura total.</p>
+		<a href="https://github.com/elspartak86/robogame"target="_blank">Código</a>
+	   </div>
+    </div>
+   </div> 
+</div>
+</section>
+    <!--CONTACTO -->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                     <!-- Formulario -->
+                  <div class="container">
+                    <div class="header">
+                        <h2>Enviar mensaje</h2>
+                    </div>
+                    <form id="form" class="form" action="https://formspree.io/f/mleknorl"method="post">
+                        <div class="form-control">
+                            <label for="username">Name</label>
+                            <input type="text" placeholder="abcdefgh" id="username" name="name"/>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="grovervas@email.com" id="email" name="email" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="number">Number(10 to 12 numbers):</label>
+                            <input type="text" placeholder="Número telefónico" id="number" name="number" required minlength="10" maxlength="12" size="10">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message"  style="width: 100%; height: 150px;"id="message" name="message" required minlength="5" maxlength="71" size="10" ></textarea>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="form-group">   
+                                </div>
+                            </div>
+                        <button type="submit" class="button">
+                            <i class="fa-solid fa-paper-plane"></i>Enviar</button>
+                            <br>
+                            <br>
+                            <input type="reset"  class="boton" value="Borrar">
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/gto.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guanajuato México
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 445 119 4521
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: elspartak@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/jorgealberto.gutierrez.5220?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/jorge-alberto-guti%C3%A9rrez-almanza-87a5a1218" target="_blank""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=524451194521" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/elspartak86" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+</body>
+</html>

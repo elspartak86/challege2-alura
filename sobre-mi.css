@@ -1,0 +1,128 @@
+.sobremi{
+    background-color: rgba(30,35,38,1);
+    color:aliceblue;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 45px;
+    font-family:'sans-serif';
+    text-align: center;
+    padding: 16px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.sobremi .contenido-seccion p strong{
+    color:#00d4ff;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 55%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 25px;
+    font-family: 'Arial Narrow Bold';
+    margin-bottom: 23px;
+}
+
+.sobremi .fila .col ul{
+    list-style:none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #00d4ff;
+    width: 120px;
+}
+
+span{
+    font-size: 15px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #00d4ff;
+    padding:3px;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 12px;
+    margin: 0 16px 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #00d4ff;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 20px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(18, 130, 177);
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
